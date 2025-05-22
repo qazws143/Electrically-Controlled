@@ -1,0 +1,485 @@
+{
+  "name": "FreeRTOS",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "../RtosTask"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "STARTUP",
+        "files": [
+          {
+            "path": "../Libraries/CMSIS/startup/startup_stm32f10x_hd.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "../Libraries/CMSIS/core_cm3.c"
+          },
+          {
+            "path": "../Libraries/CMSIS/core_cm3.h"
+          },
+          {
+            "path": "../Libraries/CMSIS/stm32f10x.h"
+          },
+          {
+            "path": "../Libraries/CMSIS/system_stm32f10x.c"
+          },
+          {
+            "path": "../Libraries/CMSIS/system_stm32f10x.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "FWLB",
+        "files": [
+          {
+            "path": "../Libraries/FWlib/src/misc.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_adc.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_bkp.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_can.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_cec.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_crc.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_dac.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_dbgmcu.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_dma.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_exti.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_flash.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_fsmc.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_gpio.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_i2c.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_iwdg.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_pwr.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_rcc.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_rtc.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_sdio.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_spi.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_tim.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_usart.c"
+          },
+          {
+            "path": "../Libraries/FWlib/src/stm32f10x_wwdg.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "../User/main.c"
+          },
+          {
+            "path": "../User/stm32f10x_conf.h"
+          },
+          {
+            "path": "../User/stm32f10x_it.c"
+          },
+          {
+            "path": "../User/stm32f10x_it.h"
+          },
+          {
+            "path": "../User/FreeRTOSConfig.h"
+          },
+          {
+            "path": "../User/main.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "FreeRTOS",
+        "files": [],
+        "folders": [
+          {
+            "name": "src",
+            "files": [
+              {
+                "path": "../FreeRTOS/src/croutine.c"
+              },
+              {
+                "path": "../FreeRTOS/src/event_groups.c"
+              },
+              {
+                "path": "../FreeRTOS/src/list.c"
+              },
+              {
+                "path": "../FreeRTOS/src/queue.c"
+              },
+              {
+                "path": "../FreeRTOS/src/tasks.c"
+              },
+              {
+                "path": "../FreeRTOS/src/timers.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "port",
+            "files": [
+              {
+                "path": "../FreeRTOS/port/MemMang/heap_4.c"
+              },
+              {
+                "path": "../FreeRTOS/port/RVDS/ARM_CM3/port.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "DOC",
+        "files": [
+          {
+            "path": "../Doc/readme.txt"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "HardWare",
+        "files": [
+          {
+            "path": "../HardWare/led/bsp_led.c"
+          },
+          {
+            "path": "../HardWare/ST7735/GUI.c"
+          },
+          {
+            "path": "../HardWare/ST7735/ST7735_Driver.c"
+          },
+          {
+            "path": "../HardWare/mpu6050/mpu6050.c"
+          },
+          {
+            "path": "../HardWare/mpu6050/IMU.c"
+          },
+          {
+            "path": "../HardWare/mpu6050/Kalman.c"
+          },
+          {
+            "path": "../HardWare/HCSR24/HCSR04.c"
+          },
+          {
+            "path": "../HardWare/Hall/Hall.c"
+          },
+          {
+            "path": "../HardWare/Key/bsp_key.c"
+          },
+          {
+            "path": "../HardWare/IAP/IAP.c"
+          },
+          {
+            "path": "../HardWare/IAP/IAP.h"
+          },
+          {
+            "path": "../HardWare/FLASH/Flash.c"
+          },
+          {
+            "path": "../HardWare/FLASH/Flash.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "sys",
+        "files": [
+          {
+            "path": "../sys/bsp_exti.c"
+          },
+          {
+            "path": "../sys/bsp_usart.c"
+          },
+          {
+            "path": "../sys/delay.c"
+          },
+          {
+            "path": "../sys/spi.c"
+          },
+          {
+            "path": "../sys/I2C.c"
+          },
+          {
+            "path": "../sys/sys.c"
+          },
+          {
+            "path": "../sys/tim.c"
+          },
+          {
+            "path": "../sys/DMA.c"
+          },
+          {
+            "path": "../sys/DMA.h"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "STM32F103ZE",
+  "packDir": ".pack/Keil/STM32F1xx_DFP.2.3.0",
+  "miscInfo": {
+    "uid": "e5b2b235b189243d040af6750e8743a5"
+  },
+  "targets": {
+    "Fire_FreeRTOS": {
+      "excludeList": [
+        "../RtosTask/mpu6050_task.c"
+      ],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "../../../../stm32-ram.sct",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x80000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "OpenOCD",
+      "uploadConfig": {
+        "bin": "",
+        "target": "stm32f1x",
+        "interface": "stlink",
+        "baseAddr": "0x08000000"
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32f1x",
+          "interface": "stlink",
+          "baseAddr": "0x08000000"
+        },
+        "STLink": {
+          "bin": "",
+          "proType": "JTAG",
+          "resetMode": "default",
+          "runAfterProgram": true,
+          "speed": 4000,
+          "address": "0x8000000",
+          "elFile": "None",
+          "optionBytes": ".eide/fire_freertos.st.option.bytes.ini",
+          "otherCmds": ""
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          ".",
+          "../Libraries/CMSIS",
+          "../User",
+          "../Libraries/FWlib/inc",
+          "../FreeRTOS/include",
+          "../FreeRTOS/port/RVDS/ARM_CM3",
+          "../HardWare/led",
+          "../HardWare/Key",
+          "../sys",
+          "../HardWare/ST7735",
+          ".cmsis/include",
+          "../Project/RVMDK（uv5）/RTE/_Fire_FreeRTOS"
+        ],
+        "libList": [],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "STM32F10X_HD"
+        ]
+      },
+      "builderOptions": {
+        "AC5": {
+          "version": 4,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-1",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "warnings": "unspecified"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}
